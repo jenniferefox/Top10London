@@ -1,0 +1,1 @@
+var xl8img =  document.createElement('img'); xl8img.width='1'; xl8img.alt='ExelateData'; xl8img.style='display:none'; xl8img.src='https://analytics.ccgateway.net/sync/user?src=exelate&ccpt=0&puid=dc77728d929ad5ecc137729d54c017a7&ccuid=0435775d-8a94-48c3-a5a3-e11eaddc2b69&ccsid=954897dd-e646-4018-97c6-3498a28935ea&geo=GB'; xl8img.height='1'; document.body.appendChild(xl8img);

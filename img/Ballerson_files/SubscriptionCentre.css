@@ -1,0 +1,184 @@
+/******************************
+Archant Subscription Centre CSS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Updated for RFC 1983 - Subscriptions Centre design change
+Basecamp link: https://basecamp.com/2294155/projects/4252126/todos/255262881
+Requires:
+ - Bootstrap Base Theme in Base Theme slot
+ - Google Fonts Libre Franklin HTML Element in Site Root Header slot
+ - hideOther.js in Footer JS slot in Theme
+******************************/
+
+body{
+    background-color: #f7f7f7;
+    font-family: "Libre Franklin", Arial;
+}
+
+.container{
+ padding-top: 20px;  
+}
+
+.header-content h1{
+  display:none;
+}
+
+h2 {
+    color: #ed1c24;
+    font-weight: bold;
+}
+
+h2.hello {
+    font-size: 130px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+
+h3{
+  clear: both;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ed1c24;
+  width: 100%;
+  border-bottom: 2px #ed1c24 dotted;
+}
+
+h4{
+  font-weight: bold;
+  color: #ed1c24;
+  width: 100%;
+}
+
+.content-panel p{
+  clear: both;
+  margin-bottom: 20px;
+}
+
+p strong,
+p .user-name{
+  font-weight: bold;
+  color: #ed1c24;
+}
+
+.glyphicon{
+  margin-left: 5px;
+}
+
+.btn{
+  clear: both;
+  float: right;
+  background: #ed1c24;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.other h4:hover{
+    cursor: pointer;
+}
+
+form{
+  border: 5px #ed1c24 solid;
+  border-radius: 32px;
+  padding: 32px;
+  background-color: #ffffff;
+}
+
+.subscription-widget {
+    border: 5px #ed1c24 solid;
+    border-radius: 32px;
+    padding: 32px;
+}
+.subscription-widget > h4{
+    background-color: transparent;
+    color: #ed1c24;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.subscription-widget > form {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.subscription-widget > form .subscription-widget__submit {
+    margin-bottom: 0;
+}
+
+.subscription-not-valid h2 {
+    font-size: 30px;
+    color: #ed1c24;
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #ed1c24;
+}
+
+.subscription-footer p{
+    display: block;
+    font-size: 12px;
+    float: right;
+    margin: 15px 0px;
+}
+
+.subscription-footer .nav > li{
+    background-image: url("#file({'filename': 'small-archant-logo.png', 'contentId': $content.contentId, '':''})");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 10px 20px 10px 0px;
+}
+
+.subscription-footer .nav > li:last-child{
+    background-image: none;
+}
+
+.subscription-footer .nav > li > a{
+    padding-left: 10px;
+}
+
+/* subscription in article override css */
+.subscription-widget--in-article {
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+}
+.subscription-widget--in-article p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.subscription-widget--in-article p span {
+    font-weight: bold;
+}
+.subscription-widget--in-article form button.btn.btn-default {
+    margin-right: 0;
+    margin-top: 0;
+    padding: 4px 10px;
+    border-radius: 5px;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+.subscription-widget--in-article form input {
+    padding: 8px;
+    border-radius: 5px;
+    line-height: 20px;
+}
+.subscription-widget--in-article .sub-terms-cond {
+    min-height: 0;
+    height: 0;
+    padding: 0;
+}

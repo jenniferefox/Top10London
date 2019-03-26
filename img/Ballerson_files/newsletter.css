@@ -1,0 +1,86 @@
+/*
+Newsletter Widget CSS
+*/
+/* Clean Up CSS */
+body {
+	background-color: #f2f2f2;
+}
+body .subscription-widget {
+	border: none;
+	padding: 0px ;
+	font-size:14px !important;
+}
+
+
+/* Theme Styling CSS */
+.subscription-widget > h4 {
+    display:none;
+}
+
+.subscription-widget .subscription-widget__form {
+	margin-top: 15px;
+}
+
+.subscription-widget form button.btn.btn-default {
+	background: #d1ad54 !important;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0;
+    text-transform: capitalize;
+}
+
+.subscription-widget form input{
+	padding:8px;
+	border:1px solid #aaa;
+}
+
+.form-group label{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:'Open sans',sans-serif;
+	margin: 0 0 15px 0;
+	letter-spacing: 1.5px;
+}
+.subscription-widget .sub-terms-cond{
+	display:none;
+}
+.col-sm-10.text-right{
+	float:left;
+	text-align:left;
+	padding:0;
+	margin:0;
+	width:calc(100% - 80px);
+}
+.subscription-widget form button.btn.btn-default{
+	clear:both;
+	margin:0;
+}
+.subscription-widget{
+	color:#394457;
+	font-family:'Open Sans',sans-serif;
+}
+.subscription-widget .subscription-widget__form{
+	padding-top:20px ;
+	padding-bottom:20px ;
+}
+.checkbox{
+	margin:1.25em 0;
+}
+
+
+
+input::-webkit-input-placeholder{
+  color: #fff ;
+}
+
+/*  rfc 2458 - style changes to accomodate layout alteration. */
+
+
+
+

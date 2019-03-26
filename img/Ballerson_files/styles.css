@@ -1,0 +1,123 @@
+/*********** 0_BOILERPLATE ***********/
+
+body,
+#banner,
+#banner * {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+#banner * span, #banner * br  {
+    position: relative;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#banner, #border {
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+#border {
+    position: absolute;
+    border: 1px #797d83 solid;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.fullsize {
+    width: 300px;
+    height: 250px;
+}
+
+/*********** 1_MAIN_BG ***********/
+
+#mainBG {
+    background-color: #f41c5e;
+}
+
+/*********** 2_LOGOS ***********/
+
+#headLogoContainer {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+#headLogo {
+    background-image: url("images/vitality_logo1.png");
+}
+
+#endLogo {
+    background-image: url("images/vitality_logo2.png");
+}
+
+/*********** 3_AD_COPY ***********/
+
+#copy1 {
+    background-image: url("images/text1.png");
+}
+
+#copy2 {
+    background-image: url("images/text2.png");
+}
+
+#copy3 {
+    background-image: url("images/text3.png");
+}
+
+#copy4 {
+    background-image: url("images/text4.png");
+}
+
+/*********** 4_BG_ELEMENTS ***********/
+#dog {
+    background-image: url("images/dog.png");
+}
+
+#van {
+    background-image: url("images/van.png");
+}
+/*********** 5_END_BG ***********/
+
+#endBG {
+    top: 300px;
+    left: 0px;
+    background-color: #f41c5e;
+}
+
+/*********** 6_CTA ***********/
+
+#ctaContainer {
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+#ctaBg.center {
+    margin: 0 auto;
+}
+
+#ctaBg {
+    background-image: url("images/cta_bg.png");
+}
+
+#cta_copy {
+    background-image: url("images/cta_copy.png");
+}
+
+.arrow {
+    background-image: url("images/chevron.png");
+}
+
+/*********** 7_DISCLAIMER ***********/
+
+#disclaimer {
+    background-image: url("images/disclaimer.png");
+}

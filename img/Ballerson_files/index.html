@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0153)https://s0.2mdn.net/ads/richmedia/studio/pv2/60903464/20181102042107010/300x250/index.html?e=69&renderingType=2&leftOffset=0&topOffset=0&c=wKyW4xmmT9&t=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script src="./Enabler_01_231.js"></script>
+        <title>Vitality</title>
+        <style type="text/css">
+            #banner { opacity:0 }
+        </style>   
+    <link rel="stylesheet" type="text/css" href="./styles.css"><script type="text/javascript" charset="UTF-8" src="./TweenMax.min.js"></script><script type="text/javascript" charset="UTF-8" src="./bgPreload.js"></script><script type="text/javascript" charset="UTF-8" src="./banner.js"></script></head>
+    <body style="width: 300px; height: 250px;">
+        <div id="banner" style="width: 300px; height: 250px; opacity: 1;">
+
+            <!-- 1 MAIN BG -->
+            <div id="mainBG" class="abs fullsize"></div>
+            
+            <!-- 2 HEAD LOGO -->
+            <div id="headLogoContainer" class="abs">
+                <div id="headLogo" class="abs fullsize preload"></div>
+            </div>
+            
+            <!-- 5 END BG -->
+            <div id="endBG" class="abs fullsize"></div>
+            <div id="van" class="abs fullsize" style="opacity: 0; transform: matrix(1, 0, 0, 1, -151, 0);"></div>
+            
+            <!-- 3 AD COPY -->
+            <div id="copy1" class="fullsize preload" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            <div id="copy2" class="fullsize preload" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            <div id="copy4" class="fullsize preload" style="opacity: 0;"></div>
+            
+            <!-- 4 BG ELEMENTS -->
+            <div id="dog" class="fullsize preload" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+            <!-- 6 CTA -->
+            <div id="ctaContainer" class="cta fullsize" style="opacity: 0;">
+                <div id="ctaBg" class="fullsize preload">
+                    <div id="cta_copy" class="fullsize preload"></div>
+                    <div class="arrow fullsize preload" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+                </div>
+            </div>
+            
+            <!-- 2 END LOGO -->
+<!--            <div id="endLogo" class="abs fullsize preload"></div>-->
+            
+            <!-- 7 DISCLAIMER -->
+            <div id="disclaimer" class="abs fullsize preload" style="bottom: -100px;"></div>
+
+        <div id="border" style="width: 298px; height: 248px;"></div>
+        </div><!--BANNER END--> 
+    
+
+    <script>
+        // Enabler script V2 31/12/17
+        // If true, start function. If false, listen for INIT.
+        if (!Enabler.isInitialized()) {
+            Enabler.addEventListener(
+                studio.events.StudioEvent.INIT,
+                enablerInitialized);
+        } else {
+            enablerInitialized();
+        }
+        function enablerInitialized() {
+            // Enabler initialized.
+            // In App ads are rendered offscreen so animation should wait for
+            // the visible event. These are simulated with delays in the local
+            // environment.
+            if (!Enabler.isVisible()) {
+                Enabler.addEventListener(
+                    studio.events.StudioEvent.VISIBLE,
+                    adVisible);
+            } else {
+                adVisible();
+            }
+        }
+        function adVisible() {
+            // Ad visible, start ad/animation.
+            enablerInitHandler();
+        }
+        function politeInit(){
+            //Load in CSS
+            //console.log('polite load started');
+            var extCSS = document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", Enabler.getUrl("styles.css"));
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+            Enabler.loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', load1);
+            // To make sure that all the js files are fully loaded, use the load1 callback function method
+            function load1(){
+                Enabler.loadScript('bgPreload.js', load2);
+            }
+            function load2(){
+                Enabler.loadScript('banner.js');
+                //console.log('polite load completed');
+            }
+        };
+        function enablerInitHandler() {
+            politeInit();
+        }
+        function bgExit(){
+            Enabler.exit("BG Exit", "https://www.vitality.co.uk");
+        }
+        document.getElementById("banner").addEventListener("click", bgExit, false);
+    </script>
+<!--    <link href="https://assets.neunie.com/banners/localDevTools/localDevTools.css" rel='stylesheet'>-->
+<!--    <script src="https://assets.neunie.com/banners/localDevTools/localDevTools.js"></script>-->
+
+<div id="preBgHolder" style="display: none;"><img src="./vitality_logo1.png" class="preBg"><img src="./text1.png" class="preBg"><img src="./text2.png" class="preBg"><img src="./text4.png" class="preBg"><img src="./dog.png" class="preBg"><img src="./cta_bg.png" class="preBg"><img src="./cta_copy.png" class="preBg"><img src="./chevron.png" class="preBg"><img src="./disclaimer.png" class="preBg"></div></body></html>
