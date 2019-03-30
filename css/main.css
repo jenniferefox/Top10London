@@ -1,3 +1,25 @@
 h1 {
-color: red;
+  color: red;
+}
+
+header {
+  background-image:
+    linear-gradient(
+      to right, #000, rgba(0, 0, 0, 0), #000),
+    url("../img/London.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+}
+
+header .jumbotron {
+  background-color:rgba(0,0,0,0.5);
+  color:white;
+  text-align: center;
+}
+
+carousel-item {
+  height: small;
+  width: small;
 }
