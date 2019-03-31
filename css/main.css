@@ -1,12 +1,16 @@
-h1 {
+nav {
+  background-color: black;
+  background-color: rgba(0,0,0,0.5);
+}
+
+  h1 {
   color: red;
 }
 
 header {
   background-image:
-    linear-gradient(
-      to right, #000, rgba(0, 0, 0, 0), #000),
-    url("../img/London.jpg");
+
+    url("../img/NealsYard.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-color: black;
@@ -17,9 +21,71 @@ header .jumbotron {
   background-color:rgba(0,0,0,0.5);
   color:white;
   text-align: center;
+  min-height: 35em;
 }
+
+.img1 {
+  background-image: url(../img/Soho.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+  background-image: url(../img/CoventGarden.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+.img3 {
+  background-image: url(../img/Fitzrovia.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
+.img4 {
+  background-image: url(../img/City.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
+.img5 {
+  background-image: url(../img/City.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
+.img6 {
+  background-image: url(../img/Mayfair.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
+.img7 {
+  background-image: url(../img/KensingtonandChelsea.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
+.img8 {
+  background-image: url(../img/Southwark.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+}
+
 
 carousel-item {
   height: small;
   width: small;
+}
+
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    color: pink;
 }
