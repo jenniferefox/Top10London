@@ -158,3 +158,18 @@ hr {
     border-width: 3px;
     color: pink;
 }
+
+body.About {
+  background-image: url(../img/BigBen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form {
+  content: center;
+}
+
+footer {
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+nav {
+  background: transparent;
+  background-color: rgba(0,0,0,0.9)
+}
+
+nav.navbar-inner {
+    background:transparent;
+}
+
+a.btn-primary {
+    background-color: #D24FAF;
+    border-color: #D24FAF;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+a.btn-xl {
+    padding: 1rem 2rem;
+}
+
+h1 {
+  color: white;
+  outline-color: black;
+
+}
+
+header {
+  background-image: url("../img/Bar.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+}
+
+header .jumbotron {
+  background-color:rgba(0,0,0,0.5);
+  color:white;
+  text-align: center;
+  min-height: 28em;
+}
+
+div .carousel-inner {
+  max-height: 50em;
+  width: cover;
+}
+
+body {
+  background-color: black !important;
+}
