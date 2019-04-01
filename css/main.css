@@ -172,4 +172,14 @@ form {
 
 footer {
   text-align: center;
+  background-color: #D24FAF;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
 }
