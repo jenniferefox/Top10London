@@ -1,0 +1,23 @@
+nav {
+  background: transparent;
+  background-color: rgba(0,0,0,0.9)
+}
+
+nav.navbar-inner {
+    background:transparent;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  background-image: url(../img/BigBen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white; !important
+  outline-color: black;
+  min-height: 40em;
+}
