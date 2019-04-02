@@ -17,7 +17,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  color: white; !important
+  color: white;
   outline-color: black;
   min-height: 40em;
+}
+
+div.container {
+    background: rgba(0,0,0,0.5);
+    padding: 5em;
 }

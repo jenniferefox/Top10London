@@ -160,9 +160,10 @@ hr {
     color: pink;
 }
 
-
 form {
   content: center;
+  max-width: 50%;
+  margin: auto;
 }
 
 footer {
