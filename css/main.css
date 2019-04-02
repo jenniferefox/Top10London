@@ -38,6 +38,7 @@ header {
   background-repeat: no-repeat;
   background-color: black;
   background-size: cover;
+
 }
 
 header .jumbotron {
@@ -159,12 +160,6 @@ hr {
     color: pink;
 }
 
-body.About {
-  background-image: url(../img/BigBen.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 form {
   content: center;
@@ -182,4 +177,8 @@ footer a {
 
 footer a:hover {
   color: white;
+}
+
+label.form-control {
+  padding:4em
 }
